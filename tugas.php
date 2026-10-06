@@ -2,21 +2,21 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-// Variable Data Transaksi
+
 $namaBarang = "Buku Tulis";
 $hargaSatuan = 5000;
 $jumlahBeli = 7;
 
-// Hitung Subtotal
+
 $subtotal = $hargaSatuan * $jumlahBeli;
 
-// Hitung Diskon (Diskon 10% jika subtotal > 30000)
+
 $diskon = 0;
 if ($subtotal > 30000) {
     $diskon = 0.10 * $subtotal;
 }
 
-// Hitung Total Bayar
+
 $totalBayar = $subtotal - $diskon;
 ?>
 
